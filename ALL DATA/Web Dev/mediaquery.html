@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <style>
+           body{
+            font-size: 20px;
+            background-color: aqua;
+           }
+        /* @media screen not all and (width:500) 
+        {
+            body{
+                background-color:green;
+            }
+        } */
+        @media all and (max-width:600) {
+            p{
+                content: "text" ;
+                font-style: italic;
+                color:rgb(237, 9, 9);
+            }
+        }
+        /* @media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(14, 120, 155);
+  }
+} */
+       
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolore ut consequatur est modi quis eveniet necessitatibus ratione iure! Molestias perferendis nesciunt temporibus aspernatur modi laboriosam est, voluptatibus officia suscipit necessitatibus itaque explicabo alias beatae placeat amet accusamus vitae! Molestias.
+    </p>
+    <label for="file">Downloading File</label>
+    <progress id="file" value="64" max="100">32%</progress>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.416/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/3uQCyVrHlZgrsa1L/scene.splinecode"></spline-viewer>
+</body>
+</html>

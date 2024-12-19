@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BMI Calculator</title>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+            * {
+                font-family: 'Open Sans', sans-serif;
+                input[type=number] {
+                    -moz-appearance: textfield;
+                  }
+            
+                  input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            
+            }
+            
+            body {
+                display: flex;
+                justify-content: center;
+                background-color: gray;
+            }
+            
+            .container {
+                margin-top: 50px;
+                width: 300px;
+                box-shadow: 0px 0px 20px 10px #6104f7;
+                padding: 50px;
+                border-radius: 30px;
+                text-align: center;
+                background-color: #000;
+                color: #fff;
+            }
+            
+            h1 {
+                margin-bottom: 40px;
+                font-size: 40px;
+                font-family: 'Amita', serif;
+            font-family: 'Nova Square', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+                
+            }
+            p{
+                font-size: 20px;
+            }
+            input {
+                border: none;
+                border-bottom: 1px solid #0044ff;
+                width: 50%;
+                margin-bottom: 20px;
+                outline: none;
+                padding: 10px;
+                text-align: center;
+                font-size: 25px;
+                border-radius: 10px;
+            }
+            
+            button {
+                width: 100%;
+                height: 35px;
+                margin-top: 25px;
+                border-radius: 20px;
+                border: none;
+                background-color: #0044ff;
+                color: #fff;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            
+            #result {
+                margin-top: 20px;
+                font-size: 25px;
+            }</style>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+
+            <p>Height (cm)</p>
+            <input type="number" id="height" required>
+
+            <p>Weight (kg)</p>
+            <input type="number" id="weight" required>
+
+            <button id="btn">Calculate</button>
+
+            <div id="result"></div>
+        </div>
+        .
+    </body>
+    <script>window.onload = () => {
+        const button = document.querySelector('#btn');
+        button.addEventListener('click', calculateBmi)
+    }
+    
+    function calculateBmi() {
+        const height = document.querySelector('#height').value;
+        const weight = document.querySelector('#weight').value;
+        const result = document.querySelector('#result');
+    
+        if (!height || isNaN(height) || height < 0) {
+            result.innerText = "Please provide a valid height";
+            return;
+        } else if (!weight || isNaN(weight) || weight < 0) {
+            result.innerText = "Please provide a valid weight";
+            return;
+        }
+    
+        const bmi = (weight / ((height * height) / 10000)).toFixed(2);
+    
+        if (bmi < 18.5) {
+            result.innerText = `Under Weight: ${bmi}`; 
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            result.innerText = `Normal: ${bmi}`;
+        } else if (bmi >= 25 && bmi < 29.9) {
+            result.innerText = `Over Weight: ${bmi}`;
+        } else if (bmi >= 30 && bmi < 34.9) {
+            result.innerText = `Obesity (Class I): ${bmi}`;
+        } else if (bmi >= 35.5 && bmi < 39.9) {
+            result.innerText = `Obesity (Class II) : ${bmi}`;
+        } else {
+            result.innerText = `Extreme Obesity: ${bmi}`;
+        }
+    }</script>
+</html>

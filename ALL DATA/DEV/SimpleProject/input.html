@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .values{
+            display: flex;
+        }
+        table th,td{
+            border: 1px solid black;
+            width: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+           <input type="text" class="name"> 
+           <!-- <button class="btn" onclick="getData()">add</button> -->
+           <input type="number" class="name"> 
+           <!-- <button class="btn" onclick="getData()">add</button> -->
+           <input type="text" class="name"> 
+           <!-- <button class="btn" onclick="getData()">add</button> -->
+           <input type="text" class="name"> 
+           <!-- <button class="btn" onclick="getData()">add</button> -->
+           <input type="text" class="name"> 
+           <button class="btn" onclick="getData()">add</button>
+<ul>
+    <table class="table">
+
+        <tr>
+            <th>Values</th>
+        </tr>
+        <tr class="values">
+            <td id="show">0</td>
+            <td id="show">0</td>
+            <td id="show">0</td>
+            <td id="show">0</td>
+            <td id="show">0</td>
+        </tr>
+    </table>
+    <!-- <tr>Value</tr>
+                <li id="show"></li>
+            <li id="show"></li>
+            <li id="show"><li>
+            <li id="show"></li>
+            <li id="show"></li>
+        </ul> -->
+           <p class="show"></p>
+           
+    </div>
+    <script>
+        let text = document.querySelectorAll(".name");
+        let btn = document.querySelectorAll(".btn");
+        let show = document.querySelectorAll("#show");
+        let show1 = document.querySelector(".show")
+
+    
+        console.log(text);
+        console.log(show);
+      
+        
+        function getData(){
+                for(let i = 0 ; i<text.length;i++){
+            
+                let text1 = text[i].value;
+                console.log(text1)
+                show[i].innerText = text1;
+
+
+        //         for(let j = 0; j<text.length;j++)
+   
+        }
+    }
+
+    </script>
+</body>
+</html>

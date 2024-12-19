@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Counter</title>
+<style>
+    body{
+        background-color: blueviolet;
+    }
+    .box{
+        width: 400px;
+        height: 300px;
+        border: 2px solid red;
+        background-color: aqua;
+        margin: 30vh 70vh;
+        font-family:cursive;
+
+    }
+
+    h1{
+        text-align: center;
+      
+    }
+    button{
+        width: 120px;
+        height:40px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+</style>
+</head>
+<body>
+    
+    <div class="box">
+        <h1>JavaScript Counter</h1>
+        <h1 class="counter">0</h1>
+        <button class="lower" onclick="f1()">Lower</button>
+        <button class="add" onclick = "f2()">Add</button>
+
+    </div>
+</body>
+
+<script>
+
+    let counter = 0;
+    function f1(){
+
+        // let value = document.querySelector(".counter").innerHTML;
+        // console.log(value);
+        counter--;
+
+        if(counter<0){
+            document.querySelector(".counter").style.color = "red";
+        }else if(counter==0){
+
+          document.querySelector(".counter").style.color = "#000";
+
+       }
+        
+        document.querySelector(".counter").innerText = counter;
+
+
+
+
+    };
+    function f2(){
+
+        // let add = document.querySelector(".add");
+        counter++;
+        
+        if(counter>0){
+            document.querySelector(".counter").style.color = "green";
+        }
+        else if(counter==0){
+
+            document.querySelector(".counter").style.color = "#000";
+
+}
+
+        document.querySelector(".counter").innerText = counter;
+    }
+    
+</script>
+
+</html>

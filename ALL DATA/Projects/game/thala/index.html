@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Amita&family=Nova+Square&family=Open+Sans:wght@300&family=Titillium+Web&family=Ubuntu&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            /* margin-top: 50px;
+            margin: auto; */
+            font-family: 'Amita', serif;
+font-family: 'Nova Square', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+width: 100%;
+height: 100%;
+        }
+        .container{
+           
+            margin: auto;
+            margin-top: 10%;
+            /* height: 500px; */
+            width: 500px;
+            background-color: #092635;
+            color: #ffff;
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 20px;
+        }
+         .label{
+            /* display: inline-block; */
+            /* margin-left: 50%; */
+            text-align: center;
+            font-size: 30px;
+            color: #FFF78A;
+            margin-left: -20px;
+
+           
+
+        }
+        .input2{
+            /* margin: 0px 90px 10px 90px; */
+            /* margin:10px; */
+            /* margin: auto; */
+            /* margin-left:; */
+            margin: 20px;
+
+
+        }
+        input{
+            padding: 15px 15px 15px 15px;
+            font-size: 24px;
+            width: 300px;
+            margin-left: 10%;
+            border-radius: 20px;
+            border: none;
+            background-color:#9BB8CD;
+
+        }
+        button{
+            margin: 20px;
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+        background-color:#0766AD;
+        border: none;
+        margin-left: 150px;
+        font-size: 20px;
+        }
+        button:hover{
+            background-color: rgb(5, 250, 82);
+            cursor: pointer;
+        }
+        @media screen and (max-width:450px){
+            .container{
+                max-width: 280px;
+                padding: 30px;
+                /* margin: 10px; */
+            }
+            .label{
+                text-align: center;
+                margin-left: 0px;
+                font-size: 24px;
+                
+            }
+            input{
+                width: 200px;
+            margin-left: 0;
+            font-size: 18px;
+
+            }
+            button{
+                margin-left: 80px;
+                width: 130px;
+                font-size: 16px;
+            }
+            
+        }
+        #massage{
+            font-size: 30px;
+            color: #FFF78A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <div class="label">
+                <label for="input1">Enter your Reason:</label>
+            </div>
+       
+            <div class="input2">
+            <input type="text" id="input1">
+        </div>
+        
+    </div>
+
+        <button class="check-it" onclick="printit()">Check it</button>
+        <div id="massage">
+        </div>
+    </div>
+    
+</body>
+<script>
+    
+    var l ="  🥂You Thala For Reason ❤️";
+    function printit()
+{
+
+var button = document.getElementById("input1").value;
+var c1 = button.length;
+
+ function isNumeric(button) { 
+      return !isNaN(parseFloat(button)) && isFinite(button); 
+}
+ let num = isNumeric(button);
+ console.log(num);
+ if( num==true){
+    // alert("hello");
+         let r1 =button.split("");
+         console.log(r1);
+ 
+         let sum =0;
+         var r2 = r1.map(Number);
+         console.log("Sum is " + sum)
+
+          r2.forEach(x => {
+    sum += x;
+});
+var r3 = sum;
+
+    if(r3===7){
+        document.getElementById("massage").innerHTML=  `  ${ l} `;
+    
+    
+    }
+    else{
+        document.getElementById("massage").innerHTML=  ` "Sorry!, but you are not "Thala for Reason" `;
+
+    }
+   
+    console.log("Sum is " + r3);
+    console.log(typeof(r3));
+}
+else{
+ if(c1=="7"){
+        document.getElementById("massage").innerHTML=  `${button } : ${ l}`;
+    }
+    else{
+        document.getElementById("massage").innerHTML=  ` "Sorry!, but you are not "Thala for Reason" `;
+
+    }
+    
+}
+
+}
+   
+</script>
+</html>

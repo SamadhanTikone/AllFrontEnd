@@ -1,0 +1,346 @@
+
+        
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root{
+--color:#03C988;
+--color2:#f8b645;
+--theme:#03111e;
+--theme2:#34353A;
+}
+
+*{
+    color: #fff;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+transition: scroll 8s ease;
+font-family: "Kanit", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+}
+::-webkit-scrollbar-thumb {
+  
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+body{
+background-color: var(--theme2);
+max-width: 100%;
+font-weight: 300;
+overflow-x: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+header{
+width: 100%;
+padding: 1em ;
+background-color: transparent;
+color: #fff;
+
+}
+
+nav{
+display: flex;
+justify-content: space-around;
+align-items: center;
+line-height: 80px;
+border-radius: 30px;
+padding: 20px;
+background: var(--theme);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.9px);
+-webkit-backdrop-filter: blur(7.9px);
+border: 1px solid rgba(255, 255, 255, 0.36);
+}
+.head h1{
+width: auto;
+font-size: 2rem;
+text-transform: uppercase;
+font-family: "Space Grotesk", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+line-height: 30px;
+font-style: normal;
+color: #fff;
+border-bottom: 3px solid var(--color);
+border-radius: 5px;
+padding:5px 3px ;
+}
+#links{
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+
+}
+ul li a{
+text-decoration: none;
+width: 300px;
+color: #fff;
+padding: 0.5em .8rem;
+font-size: 1rem;
+font-family: "Rubik", sans-serif;
+font-optical-sizing: auto;
+font-weight: 450;
+text-transform: uppercase;
+font-style: normal;
+margin: 0px 5px;
+}
+ul li{
+text-decoration: none;
+list-style: none;
+}
+.btn{
+font-family: "Rubik", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500;
+text-transform: uppercase;
+font-style: normal;
+padding: 10px ;
+border-radius: 10px;
+border: none;
+background-color: var(--color);
+color: #fff;
+font-size: 1rem;
+cursor: pointer;
+transition: transform 0.3 ease-in-out;
+transform: scale(1);
+}
+.btn:hover{
+transform: scale(0.98);
+
+}
+.checkBtn{
+font-size: 18px;
+display: none;
+cursor: pointer;
+right: 0;
+}
+#check{
+display: none;
+}
+
+.active:first-child{
+background-color: var(--color);
+color: #fff;
+border-radius: 10px;
+transition: background-color 0.3s ease-in-out;
+}
+ul li a:hover{
+background-color: var(--color);
+color: #fff;
+border-radius: 10px;
+transition: background-color .05s ease-in-out;
+}
+
+
+.container-one{
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+.content1{
+
+    flex: 1;
+    padding: 2rem;
+    margin: 2rem 0;
+
+}
+.profile {
+    flex: 1;
+}
+.profile img{
+    margin-top: 2rem;
+    width: 80%;
+    animation: jump 0.8s infinite 0.1s ease-in-out;
+
+}
+
+@keyframes jump {
+    0%{
+        transform: translateY(-1.5%);
+    }
+    25%{
+        transform: translateY(-1%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    75%{
+        transform: translateY(-1%);
+    }
+    100%{
+        transform: translateY(-1.5%);
+    }
+}
+.content1 .one{
+    font-size: 2rem;
+    margin-right: 20px;
+    font-family:  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.content1 .two{
+    font-size: 2.5rem;
+    color: var(--color);
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.content1 .tik{
+    margin-left: 12%;
+    /* font-size: 1rem; */
+}
+.content1 #three{
+    font-size: 2rem;
+    display: block;
+    font-family:  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content1 .four{
+    font-size: 2rem;
+    display: block;
+    font-family:  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contact1{
+    border: 5px solid var(--color);
+    border-radius: 10px;
+    color: var(--color);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .3em .8em;
+}
+
+.contact1:hover{
+    background: var(--color);
+    color: #fff;
+}
+.container-one{
+        width: 100%;
+        display: flex;
+        padding: 2rem;
+        flex-wrap: wrap;
+        font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      margin-bottom: 2rem;
+      font-style: normal;
+    }
+    .content1{
+        flex: 1;
+        padding: 2rem;
+        margin: 2rem 0;
+    
+    }
+    .profile {
+        flex: 1;
+    }
+    .profile img{
+        margin-top: 2rem;
+        width: 80%;
+        animation: jump 0.8s infinite 0.1s ease-in-out;
+    
+    }
+    
+.container-two #my-skills{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(25vmin, auto));
+   grid-template-rows: repeat(4,1fr);
+   gap: 30px;
+   margin: 4rem;
+   border-radius: 20px;
+   position: relative;
+
+
+}
+
+
+#about {
+    padding: 2rem;
+    margin-left: 4%;
+    margin-bottom: 4%;
+}
+#about h1{
+
+   font-size: 3rem;
+   font-family: "Roboto Slab", serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+   font-weight: 500;
+   padding: 10px 20px;
+}
+#about-line{
+    font-size: 1.4rem;
+    font-family: "Space Grotesk", sans-serif;
+font-optical-sizing: auto;
+font-style: normal;
+margin:0 8%;
+display: block;
+}
+#about-line span{
+    font-weight: 200;
+
+
+}
+#about #about-line .light{
+    color: var(--color);
+    font-weight: 200;
+}
+
+.line1 {
+margin: 3px;  
+  width: 10%;
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid var(--color);
+    text-align: center;
+
+}
+
+
+#my-skills{
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    background: transparent;
+}
+.card{
+    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-show{
+    text-align: center;
+    margin: 3rem 1rem;
+    font-size: 3rem;
+}

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        button{
+            width: 120px;
+            height: 30px;
+            background-color: gold;
+            color: #000;
+            font-size: 16px;
+        }
+        .body{
+            background-color: red;
+        }
+        .body1{
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <button class="one">Change </button>
+        <button class="two">AAAA</button>
+
+    </div>
+
+    <script>
+        let body = document.querySelector("body")
+        let button = document.querySelector(".one");
+        let button1 = document.querySelector(".two");
+
+        button.addEventListener("mouseenter",()=>{
+         body.classList.add("body")
+
+        })
+         button.addEventListener("mouseleave",()=>{
+            body.classList.remove("body")
+
+         })
+        button1.addEventListener("mouseenter",()=>{
+         body.classList.add("body1")
+
+
+         button1.addEventListener("mouseleave",()=>{
+            body.classList.remove("body1")
+
+         })
+
+
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #121212;
+            /* display: grid;
+           place-self: center; */
+            
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+position: absolute;
+
+        }
+        .card{
+            width: 40vmin;
+            height: 40vmin;
+            position: absolute;
+            border: 2px solid #fff;
+            transition: transform 0.5s ease-in-out;
+            transform-style: preserve-3d;
+            color: #ffff;
+            border-radius: 5px;
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .front{
+            backface-visibility: hidden;
+            background-color: rgb(231, 28, 28);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            padding: 10px 20px;
+
+        }
+        .back{
+            backface-visibility: hidden;
+            background-color: rgb(174, 174, 70);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform: rotateY(180deg);
+            padding: 10px 20px;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front">
+                FRont Text
+            </div>
+<div class="back">
+    Back Text
+</div>
+        </div>
+    </div>
+    <script>
+
+        console.log("One")
+        // console.log("TWo")
+        // console.log("Three")
+        // setTimeout(()=>{
+        //     console.log("Helooooooooooooooo");
+        // },2000)
+        // function add(a,b){
+        //     console.log(a+b)
+        // }
+        // function values(a,b,callback){
+        //     callback(a,b);
+        // }
+        // function valuesOfValues(a,b,callback){
+        //     callback(a,b,add)
+        // }
+
+        // valuesOfValues(10,44,values)
+
+    //    function getData(data,getNextData){
+    //     setTimeout(()=>{
+    //         console.log("data",data)
+    //         if(getNextData){
+    //             getNextData();
+
+    //         }
+    //     },2000)
+    //    }
+
+    //    getData(2,()=>{
+    //     getData(456,()=>{
+    //         getData(768,()=>{
+    //             getData(333)
+    //         })
+    //     })
+    //    });
+      
+
+</script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border:4px solid black;
+            padding: 20px;
+            text-align: center;
+        }
+        .box button{
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+<body >
+    <!-- <h1>Learning javascript</h1>
+    <abbr title="Hello guys welcome">HEllo</abbr>
+    <select name="" id="">
+        <optgroup label="Card Types">
+            <option value="mastercard">MasterCard</option>
+            <option value="visa">Visa</option>
+            <option value="ruppay">Ruppay</option>
+        </optgroup>
+
+    </select>
+    <p>Time is :- <time>10:00</time> </p>
+    <template>
+        <div>
+            <p>Title</p>
+        </div>
+    </template>
+    <p>hello <sup>Guys</sup> Friends </p> -->
+    <div class="box">
+        <h1>hello</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dolorum omnis saepe at voluptates quis inventore placeat, doloribus alias explicabo nobis? Molestias temporibus blanditiis laudantium exercitationem. Doloribus enim perferendis asperiores cumque quo culpa alias molestias est dolores totam consectetur delectus, eligendi ipsum deleniti fugiat nobis veritatis explicabo, blanditiis placeat magni?</p>
+    <button onclick="box()" >Click Me</button>
+</div>
+
+
+
+
+   
+        <script>
+            function box (){
+                document.write(" heelo friends my name is samadhan tikkone  ")
+            }
+    function hello(){
+
+        document.write("Helllo Sam ");
+
+    }
+    // // hello();
+    // function sum(a=50,b=90){
+    //     // let add = return a+b;
+    //     let addition =a+b;
+    //     // document.write(` The sum is :${a+b} `);
+    //     return addition;
+    // }
+    // // document.write(sum(70,909));
+    // let add=sum(20,30);
+    // document.write(add);
+
+   
+
+    // sum(30,70);
+    // sum(40,60);
+    // <ul>
+    // let a=1;
+    
+    // for(let a=1;a<=100;a=a+10){
+    //     document.write("<br>")
+
+
+    //     // document.write( "<br>"+a +" Hello<br></li>");
+    //     for(let b=a;b<a+10;b++){
+    //     document.write( b);
+        
+    // }
+    // document.write("<br>")
+    // }
+    // </ul>
+    // document.write("<br>");
+
+    
+    
+
+
+    // for(let a=5;a>=1;a--)
+    // {
+    //     for(let b=a;b>=1;b--){
+    // //         document.write(b);
+    // //     }
+    // //     document.write("<br>");
+
+
+
+
+    // }
+    var arry=[10,2,"Hello","bye  ",30,40,50,60,70,80,890];
+    let sum=0;
+    document.write("<ul>");
+
+    for(let a=0;a<=arry.length-1;a++){
+
+
+    document.write("<li>"+arry[a]+"</li>");
+    sum =sum + arry[a];
+   
+
+
+
+
+}
+document.write("</ul>");
+
+document.write("the Sum is "+ sum);
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+
+let ary = new Array()
+    // ary[0]=10;
+    // ary[2]=20;
+    // ary[7]=40;
+    // {
+    //     // document.write("<br>");
+    //     document.write(ary +"<br>");
+    //     // document.write("<br>");
+
+    // }
+// for(let a=0;a<6;a++){
+//     ary[a] = prompt("Enter a number:");
+// }
+//     document.write(ary + "<br>");
+    
+    // let aarry=[
+    //     ["harry",01,56],
+    //     ["sam",29,47],
+    //     ["ram",49,50]
+    //     ["harry",01,56],
+    //     ["sam",29,47],
+    //     ["ram",49,50]["harry",01,56],
+    //     ["sam",29,47],
+    //     ["ram",49,50]["harry",01,56],
+    //     ["sam",29,47],
+    //     ["ram",49,50]["harry",01,56],
+    //     ["sam",29,47],
+    //     ["ram",49,50]
+    // ]
+    // document.write("<table border=1px>")
+
+    // for(let b=0;b<aarry.length-1;b++){
+    //     document.write("</tr>")
+
+    //     for(let c=0;c<aarry[b].length-1;c++)
+    //     {
+    //         // document.write("</tc>")
+
+    // document.write("<td>"+aarry[b][c]+"</td>")
+    //     }
+    //     // document.write("<br>")
+    // }
+    // document.write("</table>")
+
+
+let ages=[2,3,4,5,6,33,55,44,33,11];
+
+document.write(ages +"<br>");
+
+// let string2=string1.slice(0,1);
+// document.write(string2+"<br>");
+// // string1.splice(2,-);
+// document.write(string1+"<br>");
+// let c= string1.includes("ok");
+// document.write(c);
+
+
+// function isok(sk){
+//     return sk >=19;
+// }
+// let s2= ages.filter(isok);
+// document.write(s2);
+// document.write("<br>,<br>,<br>")
+// let ages1=[2,3,4,5,6,33,55,44,33,11];
+
+// document.write(ages1 +"<br>");
+// ages1.fill(22 );
+// document.write(ages1 +"<br>");
+// let ages2=[2,3,4,5,6,33,55,44,33,11];
+// ages2.forEach(function(a1,inde ){
+
+//     document.write(inde +":"+a1+"<br>")
+// })
+
+let a = {
+    name: "sam",
+    lname :" Tikone",
+    age : 20,
+    gender : "male",
+    favm  : ["ok ", "dhoom","mchale ","dhoom"],
+    function : function (){
+        return this.name + this.lname;
+    },
+    object : {
+        'phone':9356807968,
+        email : "sam@"
+    }
+};
+for (var key in a ){
+    document.write(key + " : " + a[key] +"<br>")
+}
+
+document.write(a);
+console.log(a);
+document.write(a.name);
+document.write(a.favm[2]);
+document.write(a.function());
+document.write(a.object.phone);
+document.write(a.object.email);
+
+var ob = new Object ();
+
+ob.name1 = "Sam ok";
+document.write(ob.name1);
+
+
+ let arry2 = [
+    {name:"Sam",age :22},
+    {name:"RAm",age :33},
+    {name:"ok",age :44},
+ ];
+
+ console.log(arry2);
+ for(let x=0;x<arry2.length;x++)
+ {
+    document.write("<br>"+arry2[x].name +" " + arry2[x].age )
+
+ }
+ const aaa=[2,3,4,5,6]
+ aaa[4]=55;
+ document.write(aaa);
+
+ const aaaa= {
+    name :"sam",
+    age :23
+ }
+ aaaa.name ="ram";
+ document.write("<br>"+aaaa.name +" "+aaaa.age);
+
+ let ob3 = {
+    name : "name",
+    age :33
+ }
+//  let name4 = prompt("Enter your name");
+//  ob3.name = name;
+ document.write(ob3.name);
+
+const obj6 = {
+    name : "samadhan ",
+    age :30,
+    gender : "male "
+}
+for (let z =0; z<obj6.length;z++){
+    document.write("<br>"+ obj6[z]+"<br>")
+
+}
+for(var key in obj6 ){
+    document.write("<br>"+key +" : "+obj6[key]+"<br>")
+}
+let a5 =[
+    20,30,40,50
+]
+let b5 = a5.map(test);
+
+function test (x){
+    return x*10
+
+}
+document.write(b5);
+
+let y=60;
+let b9 = Number(y);
+document.write( b9  + 20);
+
+</script>
+    
+</body>
+</html>

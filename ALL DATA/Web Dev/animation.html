@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(Source/pppsychedelic.webp);        }
+         .box
+        {
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            /* transition: width 1s,height 1s,backgroud-color 0.5s,border-radius 0.5s; */
+            transition: ;
+            color: red;
+        } 
+        .box:hover .front{
+
+            /* width: 500px;
+            height: 500px;*/
+            background-color: rgb(26, 48, 247);
+            /* border-radius: 50%;  */
+            transform: rotateX(180deg);
+        } 
+        .box:hover .back{
+
+            /* width: 500px;
+            height: 500px;*/
+            background-color: aquamarine;
+            /* border-radius: 50%;  */
+            transform: rotateY(0deg);
+        } 
+         /* .box{
+            animation: slide 0.5s ease 0s infinite running ;
+         }
+         @keyframes slide{
+            0%{ 
+                bottom:0px;
+                background-color: aquamarine;
+            }
+            50%{
+                bottom: 50px;
+                background-color: aqua;
+            }
+            100%{
+                background-color: blue;
+                
+            }
+         } */
+    </style>
+</head>
+<body>
+    <div class="box front">
+        Box1
+        <div class="box back">
+            box2
+        </div>
+    </div>
+</body>
+</html>

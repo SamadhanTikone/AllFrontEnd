@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100;
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid rgba(234, 74, 11, 0.5);
+            
+        }
+        .container h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .info{
+            width: 500px;
+            background-color: #C9a8ff;
+            padding: 20px;
+            /* font-size: 24px; */
+            border-radius: 20px;
+            border: 2px solid rgb(187, 148, 250);
+
+
+            
+        }
+        .container input{
+            width: 100%;
+            border: none;
+            /* background-color: #A6befd; */
+            display:inline-block;
+            padding: 10px;
+            font-size: 15px;
+            margin: 10px;
+            /* margin-left: ;
+             */
+             border-radius: 10px;
+            /* height: 30px; */
+        }
+        .container label{
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        .gender label{
+            /* font-size: 14px; */
+            cursor: pointer;
+            padding: 5px;
+            
+        }
+        .gender input[type=radio] {
+    border: 0px;
+    width: 12px;
+    height: 20px;
+    text-align: center;
+}
+        #qual{
+            width: 100%;
+            border: none;
+            /* background-color: #A6befd; */
+            display:inline-block;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+
+        }
+        .gender input{
+            border: none;
+            margin: 0;
+            display: inline;
+            width: 10px;
+
+        }
+         .gender {
+            /* margin-left: 0; */
+            /* width: 0; */
+            padding: 20px 0px 25px 0px;
+        }
+         #address {
+           
+           font-size: 18px;
+           padding: 10px;
+           /* margin-left: 100px; */
+           border: none;
+           width: 100%;
+           margin-left: 10px;
+           border-radius: 10px;
+
+
+        }
+
+        .req input{
+            background-color: #48EE82;
+            cursor: pointer;
+
+}
+        
+        .info::placeholder{
+            color: grey;
+        }
+        .mobile input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Registration From</h1>
+   
+        <Form class="info">
+            <div class="firstname">
+            <label for="fname">First Name:*</label>
+            <input type="text" id="fname" required placeholder="eg. SAMADHAN" >
+        </div>
+        <div class="lastname">
+            <label for="lname">Last Name:*</label>
+            <input type="text" id="lname" required placeholder="eg.TIKONE">
+        </div>
+        <div class="email">
+            <label for="email">Email:*</label>
+            <input type="text" id="email" required placeholder="eg.sam@gmail.com">
+        </div>
+        <div class="mobile">
+            <label for="mobileno">Mobile:*</label>
+            <input type="number" id="mobileno" required placeholder="eg.937938****">
+        </div>
+        <div class="bod">
+            <label for="bod">Date of Birth:*</label>
+            <input type="date" id="bod" required placeholder="17/09/2003">
+        </div>
+        <div class="gender">
+    
+           <label for="gender">Gender:*</label>
+            <!-- <legend >Gender:*</legend> -->
+             <input type="radio" id="male" value="male" required name="gender" > <label for="male">Male</label>
+             <input type="radio" id="female" value="female" required name="gender"><label for="female" >Female</label>
+        
+        </div>
+        <div class="address">
+            <div class="add">
+                <label for="address">Address:*<label>
+
+            </div>
+           <textarea name="address" id="address" cols="40" rows="5" placeholder="eg.at post"></textarea> </div>
+        <div class="state">
+            <label for="state">State:*</label>
+            <input type="text" id="state" required placeholder="eg.Maharastra">
+        </div>
+        <div class="qual">
+            <label for="qual">Qualification:*</label>
+            <select name="qualification" id="qual">
+                <option value=" ">Select Qualification:</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="BTech.">BTech.</option>
+                        <option value="MTech.">MTech.</option>
+                        <option value="MCA">MCA</option>
+                        <option value="BCA">BCA</option>
+            </select>
+
+        </div>
+        <div class="password">
+            <label for="password">Password:*</label>
+            <input type="password" id="password" required placeholder="eg.********">
+        </div>
+        <div class="req">
+            <input type="submit" >
+        </div>
+        </Form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list1">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit!</div>
+        <li>Hool</li>
+        <li>gfd</li>
+        <li>SF</li>
+        <li>ghgf</li>
+        <li>sfdgd</li>
+    </ul>
+    <ul id="list2">
+        <li>jhjsd</li>
+        <li>jnkkjssd</li>
+        <li>jujhdjs</li>
+        <li>jsdohfsd</li>
+    </ul>
+    <script>
+var a= document.getElementById("list1").children[0];
+ var b = a.cloneNode(a);
+
+ var c =document.getElementById("list2").appendChild(a);
+ console.log(c);
+    </script>
+</body>
+</html>

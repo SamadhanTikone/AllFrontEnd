@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Programmer</h1>
+    <p>Click on me for print this page</p>
+    <button onclick="printThisPage()">click me</button>
+    <h2>Problems</h2>
+    <p>Find the area of a triangle where three sides are 5, 6, 7</p>
+    <button onclick="findMe()">Click here for Answer</button>
+</body>
+<script>
+    function printThisPage(){
+        // window.print();
+        var newDate= new Date();
+        var dd=newDate.getDate();
+        var mon= newDate.getMonth();
+        var yy= newDate.getFullYear();
+        var today= dd+"-"+mon+"-"+yy
+        console.log(today)
+    }
+    function findMe(){
+        var a=7;
+        var b=6;
+        var c=5;
+        var area=(a*b*c)/2;
+        document.write("Area of given Triangle is:"+area)
+
+    }
+</script>
+</html>

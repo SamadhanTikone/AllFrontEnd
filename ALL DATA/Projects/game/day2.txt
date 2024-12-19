@@ -1,0 +1,23 @@
+Hello coders,
+
+Welcome to our HTML course! Today, we'll learn how to add a Google Map to our web page.
+
+Let's get started.
+
+First, create a basic structure of HTML:
+
+Now, let's add a heading using the <h1> tag.
+
+Next, open your web browser and go to Google. Search for "Google Map" and navigate to your desired location. For this example, let's search for "Delhi."
+
+Once you're on the map for your location, click on the "Share" button on the right side. Then, select "Embed map" and choose the size you want (small, medium, or large). After that, click on "Copy HTML."
+
+Now, paste the copied HTML code below the <h1> tag in your HTML document.
+
+Now, save your HTML file and open it with a live server to see if the map is working correctly.
+
+If you have any questions or queries, feel free to DM me or leave a comment, and I'll be happy to assist you.
+
+Don't forget to follow for more informative videos!
+
+Happy coding!

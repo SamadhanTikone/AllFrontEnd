@@ -1,0 +1,176 @@
+.mainContainer{
+  height: calc(100vh- 200px);
+}
+
+
+/* //////////////////////////// */
+  .navbar{
+  margin: 0px 40px;
+  }
+  .navbar h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #ffff;
+    margin-left: 30px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar ul{
+    display: flex;
+    margin-right: 40px;
+  
+  }
+  .navbar ul li{
+    text-decoration: none;
+    font-size: 14px;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 28px;
+  
+  }
+
+  .navbar .link{
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  /* /////////////////////////////////// */
+  .contactInfo{
+    margin: 30px 200px;
+  
+  }
+
+
+  .contactInfo h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+
+  }
+  .contactInfo p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  /* ////////////////////////////////////////// */
+
+  .main{
+    display: flex;
+  }
+  .contactSection{
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 30px 200px;
+    justify-content: space-around;
+
+
+  }
+
+  .imgContact img{
+    width: 330px;
+    top: -10px;
+    display: inline-block;
+    filter: drop-shadow(4px 8px 30px black);
+  } 
+ 
+   /* //////////////////////////// */
+
+  
+  .contactForm button{
+    padding: 15px 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 7px;
+
+  }
+
+  .topBtn {
+    display: flex;
+    margin: 0;
+    gap: 24px;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .priBtn{
+  color: #fff;
+  background: #000;
+  border-radius: 9px;
+  border: none;
+  }
+  .secBtn{
+  background: #FFF;
+  border: 1px solid #000;
+  border-radius: 9px;
+  color: #000;
+  }
+
+  /* //////////////////////////////////////// */
+
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+  .form_control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+    position: relative;
+  }
+
+  .form_control input{
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+
+  
+  .form_control label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: 540;
+    background: #fff;
+    padding: 0 4px;
+  }
+
+
+  .form_control textarea{
+    border: 1px solid black;
+    padding: 10px 10px;
+    font-size: 20px;
+    /* margin-top: 12px; */
+    border-radius: 4px;
+  }
+
+  /* ////////////////////////////////// */
+  .p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 550;
+  }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick the Random Color</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 5rem;
+            color: rgb(0, 0, 0);
+        }
+        button{
+            padding: 10px ;
+            width: 120px;
+            height: 40px;
+            background-color: #8bb5db;
+            cursor: pointer;
+            transition: .04s;
+            scale: 1;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        button:hover{
+            scale: 1.05;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Random color Maker</h1>
+    <button class="red" onclick="changeColor(red)">RED</button>
+    <button class="blue" onclick="changeColor(blue)">BLUE</button>
+    <button class="green" onclick="changeColor(green)">GREEN</button>
+    <button class="random" onclick="changeColor(random)">RANDOM</button>
+    
+    <script>
+        let red = document.querySelector(".red");
+        let blue = document.querySelector(".blue");
+        let green = document.querySelector(".green");
+        let random = document.querySelector(".random");
+        let body = document.querySelector("body");
+
+        function changeColor(name){
+
+            if(name==red){
+                body.style.backgroundColor = "red";
+            }
+            else if(name == blue){
+                body.style.backgroundColor = "blue";
+
+            }
+            else if(name == green){
+                body.style.backgroundColor = "green";
+
+            }
+            else if(name == random ){
+
+                ///*************METHOD 1*************///
+                // let colors = ["yellow","black","gray","violet","pink","aqua","orange"];
+                // let random = parseInt(Math.random()*colors.length);
+                // body.style.backgroundColor = colors[random];
+
+                ///*************METHOD 2*************///
+                let red = Math.round(Math.random()*255);
+                let blue = Math.round(Math.random()*255);
+                let green = Math.round(Math.random()*255);
+
+                let color = `rgb(${red},${blue},${green})`;
+                body.style.backgroundColor = color;
+
+            }
+            
+        }
+    </script>
+</body>
+</html>

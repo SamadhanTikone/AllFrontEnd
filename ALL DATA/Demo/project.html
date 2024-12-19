@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media(prefers-color-scheme:dark) {
+            body{
+                background-color: black;
+                color: #ffff;
+            }
+            
+        }
+        @media(prefers-color-scheme:light) {
+            body{
+                background-color: #ffff;
+                color: #000;
+            }
+            
+        }
+        form{
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            font-size: 24px;
+            background-color: green;
+
+        }
+        form input{
+            display: table-cell;
+        }
+        form:focus-within{
+            background-color: gray;
+
+            
+        }
+        form:focus-within >button{
+            display: block;
+        }
+        button{
+            display: none;
+        }
+        ul li{
+
+        text-decoration: none;
+        list-style-type:none;
+        }
+        .abbr{
+            /* text-decoration: dashed; */
+            text-decoration-thickness:5px;
+            font-size: 24px;
+            color: red;
+            text-decoration-color:green ;
+        }
+        .edit{
+            border: 2px solid blue;
+            padding: 10px;
+        }
+        .img{
+            filter: grayscale(100%);
+            width: 500px;
+        }
+        .img:hover{
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <a href="/Source/00.jpg" download="logo">You Want to download IMAge</a>
+    <input type="file" accept=".pdf">
+    <h1>hello Worlds!</h1>
+    <form action="ok">
+        <div>
+
+<label for="name">Name:
+    <input type="text">
+
+</label>
+</div>
+<div>
+<label for="password">Password:
+    <input type="text">
+
+
+</label>
+</div>
+<button>Submit</button>
+
+
+    </form>
+    <ul>Name:
+        <li><input type="text"></li>
+    </ul>
+    <abbr title="Hello  lorem5" class="abbr">he</abbr>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <mark>HELLOJI!</mark>
+    Voluptatum, incidunt.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    
+</p>
+<div contenteditable="true" class="edit" spellcheck="true">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eveniet provident, reiciendis, tenetur cumque maiores beatae, error recusandae blanditiis natus iure consequuntur nesciunt perferendis atque. Aliquid, doloremque quos provident error deserunt eum facilis excepturi praesentium modi enim, magni officia, veniam adipisci. Asperiores sed esse neque amet labore facilis ex. Magnam?</p>
+</div>
+<a href="hello.html" accesskey="c">Check me</a>
+
+<div class="pass">
+    <input id="pass" type="password">
+    <input id="check" type="checkbox">
+</div>
+<img src="Source/77.jpg" class="img" alt="">
+<button class="print" onclick="print()">Print</button>
+<script>
+    check.onclick = togglePassword;
+    function togglePassword(){
+        if(check.checked)pass.type= "text";
+        else pass.type = "password";
+    }
+    function print(){
+        document.print();
+    }
+</script>
+</body>
+</html>

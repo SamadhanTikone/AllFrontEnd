@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="page1">
+            <nav>
+                <img src="ELECTRICAL (2).png" alt="">
+                <div class="links">
+                    <ul>
+                        <li><a href="">HOme</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="">Sign up <i class="	fa fa-sign-in"></i></a>
+                </div>
+
+            </nav>
+            <div class="part2">
+            <div class="left">
+                <h1>Unlimited </h1>
+                   <h1>Loremipsumios </h1> 
+                   <h1><span> <img src="https://images.pexels.com/photos/18939850/pexels-photo-18939850/free-photo-of-portrait-of-woman-in-black-jacket.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></span><span> <img src="https://images.pexels.com/photos/8111793/pexels-photo-8111793.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></span><span> <img src="https://images.pexels.com/photos/18189229/pexels-photo-18189229/free-photo-of-portrait-of-woman-with-brown-hair.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt=""></span> ideas</h1>
+                    
+                </h1>
+            </div>
+            <div class="right">
+<img src="https://images.pexels.com/photos/16176622/pexels-photo-16176622/free-photo-of-woman-with-curly-hair-posing-with-eyes-closed.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </div>
+        </div>
+        </div>
+        <div class="page2">
+            <div class="box">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ex dicta fugit error laudantium excepturi.</p>
+            </div>
+            <div class="box">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ex dicta fugit error laudantium excepturi.</p>
+            </div>
+            <div class="box">
+                <h1>Lorem, ipsum.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ex dicta fugit error laudantium excepturi.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let timeline = gsap.timeline();
+
+    timeline.from("nav img , .links li, .login , .login i, nav",{
+        y:-100,
+        duration:.5,
+        delay:.6,
+        opacity:0,
+        stagger:.3,
+
+    })
+    timeline.from(".left ",{
+        opacity:0,
+        duration:.3
+    })
+    timeline.from(".left h1",{
+        x:-500,
+        scale:0,
+        duration:.5,
+        stagger:.3,
+
+    })
+    timeline.from(".right img",{
+        opacity:0,
+        scale:0,
+        duration:.5,
+
+    })
+    gsap.from(".page2 .box",{
+        opacity:0,
+        scale:0,
+        duration:1,
+        stagger:.3,
+        scrollTrigger:{
+            trigger:".page2 .box",
+            scroller:"body",
+            start:"top 70%",
+            
+
+        }
+
+
+    })
+</script>
+</html>
+

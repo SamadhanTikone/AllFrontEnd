@@ -1,0 +1,159 @@
+#connect{
+    width: 100vw;
+    height: 100%;
+    margin: 3rem;
+}
+#connect h1{
+    text-align: center;
+    font-size: 3rem;
+    /* text-decoration: underline; */
+    margin: 3rem 0;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 6rem; */
+}
+.links div{
+    margin: 0 1rem;
+}
+.links a i{
+    filter: drop-shadow( .5px .5px 3px var(--color2));
+    margin: 0 2rem;
+    font-size: 3rem;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+}
+.links :hover{
+    filter: drop-shadow( .5px .5px 3px var(--color));
+    transform: scale(1.07);
+}
+
+.links span{
+    margin: 0 .5rem;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    color: #000;
+    font-size: 1rem;
+}
+
+.up{
+    margin-top: 5%;
+}
+
+p{
+    text-align: center;
+margin-top: 1rem;    
+font-size: 1.4rem;
+    font-weight: 200;
+    margin-left: 25%;
+    width: 50%;
+
+}
+
+
+
+#up{
+    position: absolute;
+}
+.fix{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    filter:drop-shadow(1px 1px 4px var(--color)) ;
+    margin: 1rem;
+    font-size: 3rem;
+    transition: all 0.1s ease-in-out;
+}
+.fix:hover{
+    transform: scale(1.1);
+}
+.up-arrow{
+    margin-right: 1rem;
+    color: var(--color2);
+}
+
+.foot{
+    margin: 2rem 0 2rem 0;
+    margin-left: 10%;
+}
+.container-five{
+    width: 100%;
+    height: 100%;
+    background-color: #1d1b1b;
+}
+.container-five h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.from form{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.from span{
+    margin-top: 14px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+   float: left;
+}
+.from form input{
+    margin: 10px;
+    width: 50vmin;
+    border-radius: 10px;
+    height: 40px;
+    padding: 20px 5px;
+    font-size: 1.2rem;
+    color: #000;
+    left: 0;
+
+}
+#submit{
+    margin: 10px;
+    width: 20%;
+    padding: 0;
+    background-color: var(--color);
+    border: none;
+    cursor: pointer;
+    margin-left: 45%;
+}
+#submit:hover{
+    background-color: var(--color2);
+}
+
+
+footer{
+    background-color: var(--theme);
+    height: 20vmin;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer span:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-left: 100px;
+}
+footer span:first-child{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}

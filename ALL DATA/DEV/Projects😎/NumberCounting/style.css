@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #121317;
+
+}
+.main-container{
+    border: 1px solid #fff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orange;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 0;
+    border-radius: 5px;
+    border-bottom: 10px solid rgb(0, 255, 255);
+    background-color: #35374B;
+    justify-content: space-between;
+
+}
+.container i{
+    color: #48CFCB;
+    font-size:3.5rem;
+    text-align: center;
+   
+}
+.num{
+    color: #fff;
+    font-size: 3em;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+
+
+}
+.text{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height:0;
+}
+
+@media screen and(max-width:1024px) {
+    .main-container{
+        width: 85vw;
+
+    }
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+    .num{
+        padding: 10px 0;
+        font-size: 2.5rem;
+
+    }
+    
+}
+@media screen and (max-width:900px) {
+    .main-container{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container{
+        font-size: 18px;
+    }
+    .num{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:568px) {
+    .main-container{
+        width: 80vw;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container i{
+
+        font-size: 2rem;
+    }
+    .container .num{
+        font-size: 2.5em;
+    }
+    .text{
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .main-container{
+        width: 80vw;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .container i{
+
+        font-size: 1.3rem;
+    }
+    .container .num{
+        font-size: 1.8em;
+    }
+    .text{
+        font-size: 12px;
+    }
+    
+}
+@media screen and (max-width:350px){
+    
+    .container{
+width: 60%;
+
+    }
+    .container i{
+
+        font-size: .8rem;
+    }
+    .container .num{
+        font-size: 1.2em;
+    }
+    .text{
+        font-size: 9px;
+    }
+    
+}
+@media screen and (max-width:280px){
+    
+    .container{
+width: 60%;
+padding: 3px 0;
+
+    }
+    .container i{
+
+        font-size: .6rem;
+    }
+    .container .num{
+        font-size: 1em;
+    }
+    .text{
+        font-size: 6px;
+    }
+    
+}

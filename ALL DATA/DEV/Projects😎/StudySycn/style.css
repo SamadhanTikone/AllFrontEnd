@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: 1.2rem 0rem;
+
+}
+
+
+
+.header{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.nav-here{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.heading{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.heading img{
+
+    width: 4.5rem;
+    background: transparent;
+}
+.heading a{
+    text-decoration: none;
+}
+.heading a span {
+    
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: rgb(15, 2, 28);
+
+}
+
+.links-here{
+    display: none;
+    gap: 1rem;
+
+
+}
+@media screen and (min-width:780px){
+    .links-here{
+        display: flex;
+    }
+    .menu-icon , .menu {
+        display: none;
+    }
+ 
+}
+@media  (max-width:780px) {
+    .contact-us {
+        display: none;
+
+    }
+    .links-here{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 14rem;
+        height: 100%;
+        background-color: red;
+        top: 0;
+        right: 0;
+        position: fixed;
+        padding: 2rem;
+        z-index: 10;
+        /* gap: 2rem; */
+        justify-content: start;
+
+    }
+    .links-here a{
+        box-sizing: border-box;
+        justify-content: start;
+        width: 100%;
+
+    }
+    .menu-icon {
+/* z-index: 99; */
+display: block;
+    }
+
+}
+
+
+.links-here a{
+text-decoration: none;
+color: rgb(15, 2, 28);
+font-weight: 500;
+font-size: 1.1rem;
+transform: color 0.1s;
+opacity: 0.9;
+}
+
+.links-here a:hover{
+    color: rgb(17, 0, 255);
+    opacity: 1;
+}
+
+.button-here a {
+    text-decoration: none;
+} 
+
+.contact-us {
+    width: 8rem;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color:rgb(33, 95, 176) ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transform: color .2s;
+    /* visibility: hidden;  */
+    /* display: none; */
+}
+
+.contact-us:hover{
+
+    background-color:rgb(1, 111, 255) ;
+    transform: scale(0.982);
+
+}
+
+.menu{
+   
+    border: none;
+    cursor: pointer;
+}
+.menu:active{
+    .links-here{
+        width: 100%;
+    }
+}
+.menu-icon{
+
+    padding: 0;
+    width: 2.3rem;
+
+}

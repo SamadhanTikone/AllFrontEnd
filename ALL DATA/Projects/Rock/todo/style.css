@@ -1,0 +1,19 @@
+*{
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+#ulTasks li.done {
+    color: #6c757d;
+    text-decoration: line-through;
+  }
+
+  .h1{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }

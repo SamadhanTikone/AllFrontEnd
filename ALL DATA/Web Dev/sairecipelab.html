@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sairecipelab</title>
+ 
+    <style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Amita&family=Open+Sans:wght@300&display=swap');
+  body{
+    /* background-color: #f8bfbf; */
+    background-color: #f7f8f9;
+    padding: 0;
+     margin: 0;
+  }
+        *{
+            
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* background-color: aliceblue; */
+
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #ffff;
+        }
+        .nav a{
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: 1000;
+            background-color: #ffff;
+
+            
+        }
+        .links1{
+            margin-top: 30px;
+            margin-left: 8%;
+        }
+        .nav img{
+            width: 17rem;
+            margin: 10px;
+            margin-left: 14%;
+        }
+       
+        .search-bar {
+            width: 300px;
+            align-items: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+            display: flex;
+            border: 1px solid black;
+            height:50px;
+            margin-top:17px ;
+            text-align: left;
+            margin-left: 90px;
+
+        }
+        .search-bar input{
+            background: transparent;
+            border: 0;
+            /* margin-left: 0; */
+            outline: none;
+            /* padding: 24px 20px; */
+            border-radius: 40px;
+            font-size: 20px;
+            color:black ;
+        }
+        ::placeholder{
+            color: palevioletred;
+        }
+        .search-bar button img{
+            width: 25px;
+            /* margin-right:
+             0; */
+             margin: 0;
+
+        }
+        .search-bar button :hover{
+            image: url(Source/search1.png);
+        }
+        .search-bar button{
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+            width: 60px;
+            border: none;
+            color: greenyellow;
+            height: 49px;
+            background:rgb(97, 96, 96) ;
+            cursor: pointer ;
+            margin-left: 37px;
+        }
+    
+        .nav a:hover{
+            color: rgb(72, 243, 72);
+        }
+        .green{
+            color: rgb(70, 242, 70);
+        }
+        .nav .black{
+            color: black;
+        }
+        .main{
+            /* margin-left: 8px; */
+            margin-top: 0;
+            margin-top: 10px;
+            width: 70%;
+            margin-left: 10px;
+            background-color:#ffff;
+            display: grid;
+            grid-template-columns: 350px 350px 350px 350px;
+font-size: 16px;
+            /* flex-wrap: wrap; */
+            /* margin:20px */
+        }
+        hr{
+            margin-top: 10px;
+            background-color: #47daf7;
+            height: 1.5px;
+            border: none;
+        }
+        .main h2{
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+     
+        .one img{
+            width: 20rem;
+            padding: 10px;
+            /* margin-top: 8px; */
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+       
+        .one h2{
+            color: #373737;
+            margin: 0;
+            margin-bottom: 10px;
+            /* font-family:'Courier New', Courier, monospace; */
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            letter-spacing: 0.7px;
+            /* text-underline:; */
+            /* text-align: left; */
+        }
+        .one a{
+            text-decoration: none;
+            /* margin-left: 10px; */
+            /* font-family: OpenSans; */
+            /* font-family: 'Open Sans', sans-serif; */
+        }
+       
+        .two h2{
+
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+            margin-bottom: 10px;
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 0.7px;
+        }
+        .two img{
+            width: 20rem;
+            padding: 10px;
+            /* margin: 10px; */
+            border-radius: 20px;
+            /* margin-top: 6px; */
+        }
+        .two a{
+            text-decoration: none;
+            color: #373737;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .three h2{
+            margin-top: 0px;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 10px;
+            font-size: 22px;
+            letter-spacing: 0.7px;
+        }
+        .three img{
+            padding: 8px;
+            /* margin: 10px; */
+            border-radius: 20px;
+            margin-top: px;
+            width: 20rem;
+        }
+        .three a{
+            text-decoration: none;
+            color:#373737;
+            float: left;
+
+            /* overflow: hidden; */
+        }
+        .footer{
+            /* background-color: aquamarine; */
+            /* display: flex; */
+            display: grid;
+            height: 100vh;
+            margin-top: 10px;
+            background-color: #ffff;
+            grid-template-columns: 600px 600px;
+
+        }
+        .footer a{
+            margin-top: 0;
+            padding: 0;
+            gap: 0;
+            text-decoration: none;
+            position: relative;
+        }
+        .footer h1{
+            font-family: 'Amita', serif;
+            margin-left:130px ;
+            /* margin-bottom: 20px; */
+            font-weight: 600;
+            font-size: 24px;
+            padding: 10px;
+/* font-family: 'Open Sans', sans-serif; */
+        }
+        .img{
+            width: 20rem;
+            /* height: 15vh; */
+            margin-left:35% ;
+
+        }
+        .links h1{
+       margin-top: 0;
+        }
+        .links a{
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* gap: 30px; */
+            margin-top: 0;
+            margin-left: 40px;
+
+
+        }
+        .social-links img{
+            width: 40px;
+            margin: 0;
+            border: 2px solid red;
+            border-radius: 50%;
+            /* object-fit: fill; */
+        }
+        
+        .footer a :hover{
+            animation: zoom-in 1s infinite;
+            border-color: rgb(58, 193, 40);
+        }
+        @keyframes zoom-in{
+            0%{
+                transform: scale(0.8);
+            }
+            50%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(0.8);
+            }
+        }
+        
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="Source/sai_recipe-lab.png" alt="">
+            <div class="links1">
+            <a href="#" class="green">Home</a>
+            <span>
+            <a href="#" class="black">About us</a>
+            <a href="#" class="black">Contact us</a>
+        </span>
+        </div>
+            <!-- <hr> -->
+            <div class="search-bar">
+            <input type="text" placeholder="Search Recipe.." id="search">
+            <button type="submit"><img src="Source/search.png" alt=""></button>
+        </div>
+        </div>
+        <hr>
+        <div class="main">
+        <div class="one">
+            <a href="#" target="_blank">
+<img src="Source/Besan-ke-ladoo-1024x592.jpg" alt="">
+<h2>Besan Laddu (Ladoo) Recipe</h2>
+</a>
+
+        </div>
+        <div class="two">
+            <a href="#">
+                <img src="Source/Aloo-Paratha-How-to-make-Potato-Stuffed-Aloo-Paratha-Recipe-300x169.jpg" alt="">
+                <h2>Potato Stuffed (Aloo) Paratha Recipe</h2>
+            </a>
+
+
+        </div>
+        <div class="three">
+            <a href="https://sairecipelab.com/bhatura-recipe-restaurant-style-instant-bhatura-recipe/">
+                <img src="Source/Bhatura-Recipe-300x173.jpg" alt="">
+                <h2>Restaurant style Instant Bhatura Recipe</h2>
+            </a>
+
+
+        </div>
+    </div>
+        <div class="footer">
+            <img src="Source/sai_recipe-lab.png" alt="" class="img">
+            
+            <div class="links">
+                
+                <h1>Follow us on</h1>
+            <a href="https://www.youtube.com/@sairecipelab" target="_blank" class="social-links ">
+                <img src="Source/youtube.png" alt="">
+            </a>
+            <a href="https://facebook.com/sairecipelab" class="social-links " target="_blank">
+                <img src="Source/facebook.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/sairecipelab/" class="social-links " target="_blank">
+                <img src="Source/instagram.png" alt="">
+            </a>
+            <a href="https://pin.it/2I4ZZtD" class="social-links " target="_blank">
+                <img src="Source/pinterest.png" alt="">
+            </a>
+        </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

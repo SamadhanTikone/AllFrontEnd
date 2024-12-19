@@ -1,0 +1,53 @@
+HTTP response status codes are standardized codes used by web servers to indicate the result of a request. They fall into several categories, each representing a different class of response. Here’s a breakdown of the most common HTTP status codes:
+
+1xx: Informational
+These status codes indicate that the request has been received and is being processed.
+
+100 Continue: The initial part of a request has been received and the client should continue with the request or ignore it if it is already finished.
+101 Switching Protocols: The server is switching protocols as requested by the client.
+2xx: Success
+These status codes indicate that the request was successfully received, understood, and accepted.
+
+200 OK: The request has succeeded. The meaning of the success depends on the HTTP method used.
+201 Created: The request has been fulfilled and has resulted in the creation of a new resource.
+202 Accepted: The request has been accepted for processing, but the processing has not been completed.
+204 No Content: The server has successfully processed the request, but is not returning any content.
+3xx: Redirection
+These status codes indicate that further action is needed to fulfill the request, often involving URL redirection.
+
+300 Multiple Choices: There are multiple options for the resource that the client may follow.
+301 Moved Permanently: The resource has been moved permanently to a new URL.
+302 Found: The resource has been temporarily moved to a new URL (commonly used for redirection).
+303 See Other: The response to the request can be found under a different URL using the GET method.
+304 Not Modified: The resource has not been modified since the last request. Used for caching purposes.
+307 Temporary Redirect: The resource resides temporarily at a different URL, and the client should use the original URL for future requests.
+308 Permanent Redirect: The resource has been permanently moved to a new URL, and future requests should use the new URL.
+4xx: Client Error
+These status codes indicate that there was an error with the request sent by the client.
+
+400 Bad Request: The server cannot process the request due to a client error (e.g., malformed request syntax).
+401 Unauthorized: The request requires user authentication or the credentials provided are not valid.
+403 Forbidden: The server understands the request but refuses to authorize it.
+404 Not Found: The server cannot find the requested resource.
+405 Method Not Allowed: The method specified in the request is not allowed for the resource.
+408 Request Timeout: The server timed out waiting for the request.
+409 Conflict: The request could not be completed due to a conflict with the current state of the resource.
+410 Gone: The requested resource is no longer available and no forwarding address is known.
+413 Payload Too Large: The request is larger than the server is willing or able to process.
+414 URI Too Long: The URI provided was too long for the server to process.
+415 Unsupported Media Type: The media type of the request data is not supported by the server.
+429 Too Many Requests: The user has sent too many requests in a given amount of time ("rate limiting").
+5xx: Server Error
+These status codes indicate that the server failed to fulfill a valid request.
+
+500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.
+501 Not Implemented: The server does not support the functionality required to fulfill the request.
+502 Bad Gateway: The server received an invalid response from an inbound server it accessed while attempting to fulfill the request.
+503 Service Unavailable: The server is currently unable to handle the request due to temporary overloading or maintenance.
+504 Gateway Timeout: The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server.
+505 HTTP Version Not Supported: The server does not support the HTTP protocol version that was used in the request.
+Each status code has specific meanings and implications for how a client should handle the response. If you need more details on any particular status code or its use cases, just let me know!
+
+
+
+

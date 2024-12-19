@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .row{
+            position: relative;
+            display: flex;
+            width: 100%;
+            white-space:nowrap; 
+        }
+
+        .row img{
+
+            width: 500px;
+        }
+
+        .row div{
+            animation: animate 1s linear infinite;
+
+        }
+        @keyframes animate {
+            0%{
+
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-200%);
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="row">
+            <div>
+                <img src="/4K/1107033.jpg" alt="" width="500px">
+            </div>
+            <div>
+                <img src="/4K/1107051.jpg" alt="" width="500px">
+            </div>
+            <div>
+                <img src="/4K/1108761 (1).jpg" alt="">
+            </div>
+            <div>
+                <img src="/4K/1108761.jpg" alt="">
+            </div>
+            <div>
+                <img src="/4K/116665.jpg" alt="">
+            </div>
+            <div>
+                <img src="/4K/2759.jpg" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+</body>
+</html>

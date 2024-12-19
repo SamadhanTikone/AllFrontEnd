@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<body>
+    
+    <h1>Stop Watch</h1>
+    <h1 class="time">00:00</h1>
+    <button class="start" onclick="startClock()">Start</button>
+    <button class="stop" onclick="stopClock()">Stop</button>
+    <button class="reset" onclick="resetClock()">Reset</button>
+
+    <script>
+
+
+        let time = document.querySelector(".time");
+
+        let second = 0;
+        let interval = null;
+
+function timer(){
+    second++;
+    setTimer();
+}        
+
+function setTimer(){
+    let minute = Math.floor(second/60);
+    second = second % 60;
+    time.innerHTML=`${padStart(minute)}:${padStart(second)}`;
+    console.log("hekklo")
+}
+
+function padStart(value){
+    return String(value).padStart(2,"0")
+}
+function stopClock(){
+
+    clearInterval(interval)
+    
+}
+function startClock(){
+
+    if(interval) stopClock();
+    
+    interval = setInterval(timer,1000);
+    console.log(interval)
+}
+function resetClock(){
+
+    // time.innerHTML="00:00"
+    stopClock();
+    second =0;
+    setTimer()
+}
+    </script>
+</body>
+</html>

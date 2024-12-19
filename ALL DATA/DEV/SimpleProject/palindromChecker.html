@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: fantasy;
+        }
+        .box{
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            margin-top: 100px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0; */
+        }
+        h1{
+            font-size: 48px;
+            text-align: center;
+            margin: 0px 20px 40px 20px;
+
+        }
+
+        input{
+            /* margin-top: 15%;
+            margin-left: 15%  ; */
+            display: block;
+            width: 70%;
+            height: 40px;
+            padding: 20px;
+            font-size: 24px;
+            margin: 10px;
+            border-radius: 20px;
+            border: 2px solid rgb(14, 226, 53);
+
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            background-color: rgb(6, 18, 43);
+            color: #ffff;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        input:hover{
+            scale: 1.03;
+        }
+        button:hover{
+            scale: 1.03;
+        }
+        h3{
+            margin-top: 10px;
+            font-size: 18px;
+            display: block;
+            color: rgb(0, 60, 95);
+
+
+        }
+        h4{
+            display: none;
+            color: black;
+           background-color: rgb(147, 40, 40);
+
+        }
+        .see{
+          width: 60%;
+          padding: 8px;
+          text-align: center;
+          color: black;
+           background-color: rgb(251, 91, 91);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Palindrome Checker</h1>
+    <input type="text" name="" id="" class="input">
+
+    <button onclick="checkPalindrome()">submit</button>
+<h4 class="see">Please enter something</h4>
+    <h3 >Hello</h3>
+
+    <script>
+        let input = document.querySelector(".input");
+
+        function checkPalindrome(){
+
+            let value = input.value;
+
+            console.log(value)
+
+            let value1 = value.toLowerCase();
+            console.log(value1)
+
+
+
+            let reverse = value.toLowerCase().split('').reverse().join('');
+            console.log(reverse)
+
+
+
+            if(value === ""){
+            //   let h4 =  document.querySelector(".see").classList.add("see");
+            //  h4.classList.add("see");
+           
+            // setTimeout(()=>{
+
+                // document.querySelector("h3").style.color= "red";
+                document.querySelector("h3").innerText = `Please Enter Something`;
+        
+
+                
+            // },3000)
+        }
+            
+
+        
+              else if(reverse == value1 )
+            {
+             document.querySelector("h3").innerText = `${value} is a Palindrome!`            }
+
+            else{
+                // alert(value +" is a not Palindrome!!!")
+                document.querySelector("h3").innerText = `${value} is not a Palindrome!`            }
+
+                document.querySelector(".input").value = "";
+
+            }
+
+            
+
+        
+    </script>
+</div>
+</body>
+</html>

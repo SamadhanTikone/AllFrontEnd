@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="main">
+        <input type="number" class="input">
+
+        <label>
+            <input type="radio" name="unit" value="celsius" checked>
+            Celsius
+        </label>
+        <label>
+            <input type="radio" name="unit" value="fahrenheit">
+            Fahrenheit
+        </label>        <button class="fer" onclick="ferenite()">Ferenite</button>
+        <button class="cel" onclick="celcius()">Celcius</button>
+        <p class="show"></p>
+    </div>
+</body>
+
+<script>
+    const input = document.querySelector(".input");
+    const show = document.querySelector(".show");
+
+
+
+    function ferenite(){
+        
+        result = (input.value * 9/5) + 32;
+      show.innerText = result;
+      
+    }
+    function celcius(){
+        result = (input.value - 32) * 5/9;      
+         show.innerText = result;
+
+    }
+
+</script>
+</html>

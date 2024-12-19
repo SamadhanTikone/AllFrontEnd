@@ -1,0 +1,135 @@
+*{
+    /* font-size: 20px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+header{
+    padding: 10px;
+    text-align: center;
+    background-color:aquamarine ;
+    color: rgb(253, 252, 252);
+    text-shadow: 2px 3px rgb(0, 0, 0);
+    font-size: 30px;
+
+}
+a:hover{
+    color: blueviolet;
+}
+video{
+    position: relative;
+    top: 0;
+    bottom: 1vw;
+    outline: none;
+
+}
+video:hover{
+    /* zoom: 50%; */
+    scale: 105%;
+}
+.pdf{
+    overflow: hidden;
+    
+}
+.pdf img{
+    /* height: 100%;
+    width: 100%; */
+    transition: scale 400ms;
+    border-radius:10px;
+    /* box-shadow: 3px 3px blueviolet; */
+}
+.pdf:hover img{
+    scale: 105%;
+
+}
+body{
+    margin: 0;
+}
+video {
+    padding: 20px;
+    transition: scale 400ms;
+    
+
+}
+video img{
+    box-shadow: 3px 3px blueviolet;
+    border-radius: 10px;
+}
+nav{
+    background-color: rgb(68, 66, 66);
+    /* height: 40px; */
+    overflow: hidden;
+}
+nav a{
+    text-decoration: none ;
+    display: block;
+    color:white ;
+    font-weight: 100;
+    padding: 15px;
+    float: left;
+}
+section{
+        text-align: center;
+        padding: 20px;
+
+}
+p1{width: 100%; line-height:26px; font-size:24px; text-align:center; padding-bottom:50px;}
+
+iframe{
+    padding: 10px;
+    transition: scale 400ms;
+    /* border-radius: 10px; */
+
+}
+iframe:hover{
+    scale: 105%;
+}
+img{
+    padding:10px;
+    border-radius: 10px;
+}
+.info{
+    font-size: 20px;
+}
+.img
+{
+    border-radius: 10px;
+    
+}
+h2{
+    padding-bottom: 20px;
+}
+footer{
+    overflow: hidden;
+    background-color: rgb(68, 66, 66);
+    text-align: center;
+
+}
+footer a{
+    text-decoration: none ;
+
+    color:white ;
+    font-weight: 100;
+    padding: 20px;
+    float: left;
+
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.last{
+    background-color: rgb(133, 135, 135);
+}
+.founder{
+    overflow: hidden;
+    transition: scale 400ms;
+}
+.founder:hover{
+    scale: 120%;
+
+}
+h2{
+    text-shadow: 3px 3px aqua ;
+    font-size: 30px;
+}

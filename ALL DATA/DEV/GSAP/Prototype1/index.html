@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background: rgb(28, 28, 28);
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+        }
+        .box span{
+            position: absolute;
+            padding: 40px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+ 
+    <h1>Hello</h1>
+    <h2>Coders</h2>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        let tl = gsap.timeline();
+
+        tl.to(".box",{
+            x:1000,
+            duration:2,
+            backgroundColor:"pink",
+            rotate:360,
+            borderRadius:"50%",
+            delay:1,
+            repeat:-1,
+            yoyo:true,
+            stagger:1
+
+        })
+        tl.to("h1",{
+            x:1000,
+            duration:1,
+            scale:1.4,
+            color:"#fff"
+
+        })
+
+        tl.from("h2",{
+            y:100,
+            scale:0,
+            duration:.5,
+            color:"white",
+        })
+    </script>
+</body>
+</html>

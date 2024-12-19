@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Massage</title>
+
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #ffff;
+            background-color:rgb(46, 213, 255);
+        }
+
+        .box{
+            border: 2px solid rgb(0, 140, 255);
+            width: 600px;
+            height: 350px;
+            margin: auto;
+            margin-top: 30vh;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(49, 49, 49);
+            color: #ffff;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            width: 450px;
+            height: 40px;
+            font-size: 24px;
+            padding: 3px;
+            background-color: aliceblue;
+            display: block;
+            text-align: left;
+            margin-left: 60px;
+            border-radius: 10px;
+        }
+        button{
+            width: 120px;
+            font-size: 18px;
+            background: #2a46f9;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-left: 40%;
+            margin-top: 20px;
+        }
+        h2{
+            text-align: center;
+            margin: 10px;
+        }
+        .append{
+            color: rgb(3, 255, 20);
+            margin: 0;
+        }
+        h4{
+            display: none;
+            font-size: 24px;
+            background-color: rgb(224, 112, 112);
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin: 5px 0px 0px 10%;
+        }
+        .see{
+            display: block;
+            font-size: 24px;
+            background-color: rgb(224, 112, 112);
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            margin: 5px 0px 0px 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Massage you would like to Pass</h1>
+        <input type="text" class="text">
+        <button onclick="f1()" class="button">Click</button>
+        <h4 class="show">Please enter some text</h4>
+
+        <h2>Last Massage Delivered!</h2>
+         <h2 class="append">Hello</h2>
+
+    </div>
+
+</body>
+<script>
+
+
+function f1(){
+    let getMassage = document.querySelector(".text").value;
+    
+
+if(getMassage === " "){
+        let showError = document.querySelector(".show").classList.add('see');
+        console.log(showError);
+
+        setTimeout(function(){
+            document.querySelector(".show").classList.remove("see");
+        },2000);
+    }
+    else{
+
+        let clearMassage = document.querySelector(".text").value = " ";
+    let appendM = document.querySelector(".append").innerText = " "
+    document.querySelector(".append").innerText = getMassage;
+    }
+
+
+    
+}
+
+
+    
+   
+ 
+</script>
+</html>

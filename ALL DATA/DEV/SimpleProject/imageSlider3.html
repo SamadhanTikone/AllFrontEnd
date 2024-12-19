@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .slider{
+            max-width: 700px;
+            border: 1ps solid red;
+            overflow: hidden;
+            max-width: 700px;
+            position: relative;
+            margin: auto;
+            background-color: gray;
+
+        }
+        .slides{
+            display: flex;
+            transition: .5s all ease-in-out;
+
+        }
+        .slides img{
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 7px;
+            background: transparent;
+            color: aliceblue;
+            font-size: 18px;
+            /* background-color: gray; */
+            border: none;
+            cursor: pointer;
+            
+
+      
+        }
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="slider">
+            <div class="slides">
+                <img src="/4K/3535770.jpg" alt="">
+                <img src="/4K/1107033.jpg" alt="">
+                <img src="/4K/1399138.jpg" alt="">
+                <img src="/4K/1108761.jpg" alt="">
+                <img src="/4K/116665.jpg" alt="">
+            </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+    </div>
+    <script>
+        let currentSlide = 0;
+
+        function showSlides(index){
+
+            const slides = document.querySelector(".slides");
+            const totalSlides = slides.children.length;
+
+            console.log(index);
+
+            if(index >= totalSlides ){
+                currentSlide = 0;
+            }
+            else if(index < 0){
+                currentSlide= totalSlides- 1;
+            }
+            else{
+                currentSlide = index;
+            }
+
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`
+        }
+
+        function nextSlide(){
+            showSlides( currentSlide + 1);
+
+        }
+        function prevSlide(){
+            showSlides( currentSlide - 1);        }
+
+        setInterval(nextSlide,3000);
+    </script>
+</body>
+</html>

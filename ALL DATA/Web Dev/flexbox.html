@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .flexContainer{
+            display: flex;
+            background-color: bisque;
+            height: 800px;
+            /* flex-wrap: wrap; */
+            align-content: center;
+            justify-content: center;
+            
+
+        }
+        .flexChild{
+            height: 400px;
+            width: 200px;
+            border: 2px solid ;
+            margin: 5px;
+
+
+        }
+        #box1{
+            background-color: yellowgreen;
+            /* flex-basis: 500px; */
+            /* flex-grow: 3; */
+            /* flex-shrink:4; */
+            align-self: center;
+            justify-self: center;
+        }
+        #box2{
+            background-color: aqua;
+
+        }
+        #box3{
+            background-color: aquamarine;
+            order: 6;
+
+        }
+        #box4{
+            background-color: blue;
+
+        }
+        #box5{
+            background-color: violet;
+
+        }
+        #box6{
+            background-color: turquoise;
+
+        }
+        #box4{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex Box</h1>
+    <div class="flexContainer">
+        <div class="flexChild" id="box1">BOX1</div>
+        <div class="flexChild" id="box2">BOX2</div>
+        <div class="flexChild" id="box3">BOX3</div>
+        <div class="flexChild" id="box4">BOX4</div>
+        <div class="flexChild" id="box5">box5</div>
+        <div class="flexChild" id="box6">box6</div>
+    </div>
+</body>
+</html>

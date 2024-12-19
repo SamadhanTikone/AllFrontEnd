@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+</head>
+<body>
+    
+    <h1>Random Quote Generator</h1>
+    <p class="quote"></p>
+    <button onclick="generate()">Generate</button>
+
+
+</body>
+<script>
+    let quotes = ["lorem10","qws","rrrr",'fff','djksds','dhdbd','dghisnbd','dhdioshd','dguidjd'];
+
+    let show = document.querySelector(".quote")
+    let usedIndex = new Set();
+
+
+    function generate(){
+
+
+        if(usedIndex.size >= quotes.length){
+            usedIndex.clear();
+        }
+
+        while (true){
+
+        let random = Math.floor(Math.random()*quotes.length);
+
+        if(usedIndex.has(random)) continue;
+        usedIndex.add(random);
+        show.innerText = quotes[random];
+        break;
+    }
+
+
+    }
+</script>
+</html>

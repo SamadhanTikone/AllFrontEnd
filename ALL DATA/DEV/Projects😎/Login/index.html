@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background: url(/4K/7986091.jpg);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .main-container{
+margin: 0;
+padding: 0;
+background-color: #0000007e;
+            height: 100vh;
+            position: relative;
+            
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        .login{
+      /* border: 2px solid red; */
+      position: absolute;          
+        background-color: rgba(63, 62, 63, 0.557);
+        border-radius: 20px;
+        filter: blur(10px 20px );
+        color: #FFF;
+        padding: 20px;
+        box-shadow: 5px 5px 20px 1px  #000;
+
+
+        }   
+        h2{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .input{
+            width: 350px;
+            border: 1px solid #656161;
+            /* display: block; */
+            padding: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            height:20px;
+            border-radius: 10px;
+            margin: 10px 5px 10px 5px;
+        }
+       label i{
+            /* margin: 0; */
+            position: absolute;
+            right: 20px;
+            color: #000;
+            font-size: 50px;
+            top:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .pass{
+            display: flex;justify-content: space-between;
+            margin: 10px;
+            font-size: 14px;
+        }
+        label{
+            display: block;
+            position: relative;
+        }
+
+        .forgot a{
+            margin-right: 5px;
+            color: #fff;
+            /* text-decoration: none; */
+        }
+        .submit{
+            width: 300px;
+            display: block;
+            padding: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(9, 115, 237);
+            margin: 10px 5px 10px 5px;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px auto;
+        }
+        span{
+            margin-left: 20% ;
+            text-align: center;
+            font-size: 14px;
+        }
+        span a{
+            color: #ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="login">
+            <h2>Login</h2>
+            <label for="">
+                <input class="input" type="text" placeholder="UserName" ><i class="		fa fa-user-circle-o "></i>
+
+            </label>
+            <label for="">
+            <input class="input" type="password" placeholder="Password"><i class="fa fa-lock"></i>
+        </label>
+
+            <div class="pass">
+                <div class="rem">
+                    <label for="check">
+                        <input type="checkbox" id="check">Remember Me?</label>
+                    
+                   
+                </div>
+                <div class="forgot">
+                    <a href="#">Forget Password?</a>
+    
+                </div>
+            </div>
+            
+            <input  class="submit" type="submit">
+
+            <span>Do not Have Account? <a href="">Register?</a></span>
+        </div>
+    </div>
+</body>
+</html>

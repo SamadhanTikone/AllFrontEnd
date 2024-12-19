@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+        }
+        body{
+            /* width: 100%; */
+            height: 100%;
+
+        }
+
+        .main .demo{
+            border: 2px solid black;
+            width:360px;
+            /* height: 550px; */
+            height: 430px;
+            margin: 30px 40px 0px 40px;
+            /* position: relative; */
+            border-radius: 10px;
+
+        }
+        div img{
+            width: 360px;
+            /* aspect-ratio: 16/9; */
+            /* padding: 20px 20px 0px 20px; */
+            /* margin: 10px; */
+            border-radius: 10px 10px 0px 0px;
+            /* border-radius: 40px; */
+            /* scale: 0.9; */
+        }
+        .demo{
+            background-color: rgb(88, 87, 87);
+            color: #ffff;
+
+        }
+        /* div img:hover{
+            scale:1 ;
+            transition: ease-in-out 0.1s;
+        } */
+        div p{
+            width: 350px;
+            padding: 0px 10px 0px 10px;
+            object-fit:contain;
+            margin: 0;
+            opacity: 0.8;
+            text-align: left;
+            text-wrap: balance;
+            /* position: absolute; */
+            position: relative;
+            font-size: 14px;
+        }
+
+        div button{
+            width: 120px;
+            height: 40px;
+            background-color: rgb(61, 61, 194);
+            color: #ffff;
+            padding: 10px;
+            font-size: 16px;
+            /* margin-left: 100px; */
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            /* margin-bottom: 10px; */
+            margin: 10px 100px 10px 100px;
+
+        }
+        div button:hover{
+            background-color: rgb(76, 76, 216);
+            scale: 1.1;
+            transition: ease-in-out 0.1s;
+        }
+        .main{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+
+        }
+        .demo h3{
+            margin:4px 4px 4px 10px;
+            padding: 0;
+            /* margin: 0; */
+            text-transform:capitalize;
+            font-weight: 600;
+        }
+        .demo h3:hover{
+
+            color: aqua;
+            cursor: pointer;
+        }
+        .demo a{
+            color: #ffff;
+            text-decoration: none;
+            text-decoration: none;
+        }
+        .p1{
+            opacity: 0.6;
+            margin-top: 4px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>This is our First Webpage since 2024</h1>
+    <div class="main">
+    <div class="demo">
+        <img src="https://cdn.pixabay.com/photo/2022/08/21/14/21/droplets-7401411_640.jpg" alt="">
+        <p class="p1">Aspernatur</p>
+        <a href="readme.txt"><h3>Lorem ipsum dolor sit.</h3></a>
+        <p>Lorem, ipsum dolor sit amet consecur adisig elit. Debitis minima, alias pariatur, quis vero officia atque, reiciendis tempora culpa officiis necessitatibus quos aliquid sit explicabo soluta saepe natus iste quae illo ratione? 
+
+        </p>
+        <!-- <button id = "button" onclick="opennewtext()">Read more...</button> -->
+    </div>
+    <div class="demo">
+        <img src="https://cdn.pixabay.com/photo/2024/02/19/13/50/monkeys-8583435_640.jpg" alt="">
+        <p class="p1">Aspernatur</p>
+        <a href="readme.txt"><h3>Lorem ipsum dolor sit amet.</h3></a>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis minima, alias pariatur, quis vero officia atque, reiciendis tempora culpa officiis necessitatibus quos aliquid sit explicabo soluta saepe natus iste quae illo ratione? Accusantium velit 
+
+        </p>
+        <!-- <button id = "button" onclick="opennewtext()">Read more...</button> -->
+    </div>
+    <div class="demo demo3">
+        <img src="https://cdn.pixabay.com/photo/2023/03/19/05/31/flower-7861942_1280.jpg" alt="" target="_blank">
+        <p class="p1">BBC</p>
+        <a href="readme.txt"><h3>Lorem ipsum dolor sit amet.</h3></a>
+        <p>Lorem, ipsum dolor sit amet consectetur elit. Debitis minima, alias pariatur, quis vero officia atque, reiciendis tempora culpa officiis necatibus quos aliquid sit explicabo soluta saepe natus iste quae illo ratione? Accusantium velit numquam eligendi odio error reiciendis culpa.....
+
+        </p>
+        <!-- <button id = "button" onclick="opennewtext()" target="_blank">Read more...</button> -->
+    </div>
+</div>
+
+
+</body>
+<script>
+    let get = document.getElementById("button");
+
+    function opennewtext(){
+
+        window.open("readme.txt");
+        
+        
+
+    }
+
+</script>
+</html>
+

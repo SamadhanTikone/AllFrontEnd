@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita&family=Nova+Square&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* line-height: 1.5px; */
+            font-family: 'Amita', serif;
+font-family: 'Nova Square', sans-serif;
+font-family: 'Open Sans', sans-serif;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* max-width: 1170px; */
+            /* background-color: red; */
+            margin: auto;
+           
+            
+            
+        }
+
+        .footer{
+            width: 100%;
+            /* background-color: rgb(81, 82, 82); */
+            /* padding: 70px; */
+           bottom: 0;
+           position: absolute;
+           margin-bottom: 0px;
+            /* top: 80%; */
+        }
+        ul{
+            list-style: none;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            background: linear-gradient(to right,#00093c,rgba(255, 115, 0, 0.92));
+            padding-bottom: 10px;
+            padding-top: 50px;
+            padding-left: 80px;
+            /* bottom: 0; */
+            /* max-width: 1100px; */
+            width: 100%;
+            border-top-left-radius:120px ;
+        }
+        .col{
+            flex: 20%;
+            padding: 0px 15px;
+            padding-bottom: 30px;
+            /* position: absolute; */
+        }
+        .col h4{
+            font-size: 20px;
+            color: #ffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            position: relative;
+            cursor: pointer;
+           
+        }
+        .col ul li a{
+            text-decoration: none;
+            color: #a3a1a1;
+            font-weight: bold;
+            /* padding: 10px;m */
+            
+        }
+        .col ul li{
+            margin-bottom: 10px;
+        }
+        .col ul li a:hover{
+            text-decoration: underline;
+            text-decoration-color:#000 ;
+            /* margin-bottom: 1px; */
+            color: #ffff;
+        }
+        .links{
+            /* margin-bottom:10px; */
+        }
+        .links a{
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #000;
+            /* border: 1px solid gray; */
+            border-radius: 50%;
+            background-color: gray;
+            padding: 5px;
+            /* position:absolute; */
+            position: sticky;
+            background-color:  rgb(100, 100, 100);
+
+            
+        }
+         @media (max-width:1200px) {
+            .face{
+                margin-bottom: 20px;
+            }
+            .col-4{
+                padding:0px 0px 10px ;
+            }
+        }
+            
+            
+        
+        @media(max-width:990px){
+
+            .insta,.face{
+                margin-bottom: 20px;
+            }
+            
+
+        }
+        @media(max-width:870px){
+             .col-4 .h4{
+                margin-left:0px ;
+                
+
+            }
+        }
+        @media(max-width:600px){
+            .col-4{
+    
+                padding: 0px 10px 10px 0px ;
+
+            }
+            .col-3{
+                margin-left: 0px;
+            }
+            .col-2{
+                margin-right: 20%;
+                margin-left: 10%;
+            }
+        }
+        @media(max-width:530px){
+            .col-3{
+                padding-left: 30px;
+            }
+        }
+        @media (max-width:480px){
+            .row{
+
+                padding-left: 10px;
+
+            }
+        }
+        .face{
+            /* width: 10%; */
+            width: 30px;
+            padding-left:5px ;
+        }
+    
+        .insta{
+            width: 30px;
+            /* margin-bottom: 20px; */
+            padding: 3px;
+        }
+        .links a:hover{
+            background-color: rgba(163, 2, 163, 0.993);
+            color: rgb(242, 246, 242);
+        }
+        p{
+            color: #adabab;
+            font-size: 15px;
+            text-align: left;
+        }
+        .h4{
+            margin-left:30px ;
+        }
+        .col-2{
+            padding-left: 10px;
+        }
+     
+        a{
+            text-transform: capitalize;
+        }
+       ul li a:hover{
+            transform: translateX(-10px);
+        }
+        .col-1 {
+            flex:40%
+            /* width: 200px; */
+            /* height: 100px; */
+        }
+        .col{
+            display:block;
+
+        }
+        .foot{
+            display: block;
+            width: 100%;
+        }
+        .foot p{
+            text-align: center;
+            padding: 5px;
+
+        }
+        .head::after{
+    width: 100px;
+
+}
+.head:hover::after{
+    transform: scaleX(100%)
+}
+        
+h4::after{
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 4px;
+    width: 80px;
+    left: 0;
+    /* top: 10; */
+    /* margin-bottom: -8px; */
+    background-color: #289df7;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    transform: scaleX(0%);
+
+}
+h4:hover::after{
+    transform: scaleX(100%)
+}
+.instagram{
+    padding-left: 3px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="footer">
+    <div class="container">
+
+
+        <div class="row">
+        <div class="col col-1">
+            <h4 class="head">Company Name</h4>
+            
+            <p>Address Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit voluptates officiis blanditiis! Nihil, omnis atque.</p>
+    
+        </div>
+        <div class="col col-2">
+            <h4>Services</h4>
+            
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">privacy policy</a></li>
+                <li><a href="">afiliate program</a></li>
+            </ul>
+        </div>
+        <div class="col col-3">
+            <h4>get help</h4>
+        
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Orders</a></li>
+                <li><a href="">Payment Options</a></li>
+            </ul>
+        </div>
+        <div class="col col-4">
+            <h4 class="h4">Follow us </h4>
+           
+            <div class="links">
+
+            <ul>
+            <a href="" ><i class="fab fa-facebook-f face " ></i></a>
+            <a href="" class="l2"><i class="fab fa-twitter insta "></i></a>
+            <a href="" class="l"><i class="fab fa-instagram insta  instagram"></i></a>
+            <a href="" class="l1"><i class="fab fa-linkedin-in insta "></i></a>
+            </ul>
+        </div>
+        
+        </div>
+        <div class="foot">
+        <hr>
+        <p class="foot1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, eveniet.</p>
+    </div>
+    </div>
+    
+    </div>
+    <hr>
+</div>
+</body>
+</html>
